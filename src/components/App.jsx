@@ -4,8 +4,11 @@ import user from 'components/Profile/user.json';
 import data from 'components/Statistics/data.json';
 import Statistics from './Statistics/Statistics';
 
-import friends from 'components/FriendList/friends.json'
-import FriendList from 'components/FriendList/FriendList'
+import friends from 'components/FriendList/friends.json';
+import FriendList from 'components/FriendList/FriendList';
+
+import transactions from 'components/TransactionHistory/transactions.json';
+import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (
@@ -25,27 +28,15 @@ export const App = () => {
       </div>
 
       <div>
-        <FriendList friends={friends} />;
+        <FriendList friends={friends} />
       </div>
 
-      <div></div>
+      <div>
+        <TransactionHistory items={transactions} />
+      </div>
     </div>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // export const App = () => {
 //   return (
