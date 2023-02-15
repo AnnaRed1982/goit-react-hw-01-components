@@ -5,7 +5,7 @@ export default function StatList({ stats }) {
     <ul className="stat-list">
       {stats.map(stat => {
         return (
-          <li key={stat.id}>
+          <li className="item" key={stat.id}>
             <span className="label">{stat.label}</span>
             <span className="percentage">{stat.percentage}</span>
           </li>
@@ -16,11 +16,13 @@ export default function StatList({ stats }) {
 }
 
 StatList.propTypes = {
-  stats: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string,
-    percentage: PropTypes.number,
-  })).isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ).isRequired,
 };
 
 // import StatItem from './StatItem';

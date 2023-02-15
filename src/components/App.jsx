@@ -2,7 +2,8 @@ import Profile from 'components/Profile/Profile';
 import user from 'components/Profile/user.json';
 
 import data from 'components/Statistics/data.json';
-import StatList from './Statistics/StatList';
+// import StatList from './Statistics/StatList';
+import Statistics from './Statistics/Statistics';
 
 export const App = () => {
   return (
@@ -18,7 +19,8 @@ export const App = () => {
       </div>
 
       <div>
-        <StatList stats={data} />
+        <Statistics title="Upload stats" stats={data} />
+        <Statistics stats={data} />
       </div>
     </div>
   );
