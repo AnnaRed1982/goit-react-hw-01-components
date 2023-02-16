@@ -6,6 +6,8 @@
   width: 300px;
   color: rgb(89, 90, 90);
 
+  box-shadow: 10px 5px 5px rgb(89, 90, 90);
+
   margin-bottom: 20px;
 }
 .title {
@@ -43,6 +45,7 @@
 .label {
   margin-bottom: 5px;
   font-size: small;
+  font-weight: bold;
 }
 /* .percentage {
 } */
