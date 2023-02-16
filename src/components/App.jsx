@@ -12,7 +12,7 @@ import TransactionHistory from 'components/TransactionHistory/TransactionHistory
 
 export const App = () => {
   return (
-    <div>
+    <div className='container'>
       <Profile
         username={user.username}
         tag={user.tag}
