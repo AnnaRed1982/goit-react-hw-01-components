@@ -25,10 +25,10 @@
   border-radius: 50%;
   display: inline-block;
 }
-.online{
+.true{
    background-color: green; 
 }
-.offline {
+.false {
     background-color: red;
 }
 .avatar {
