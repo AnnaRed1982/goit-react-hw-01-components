@@ -7,7 +7,7 @@ export default function Statistics({ title, stats }) {
     <section className={css.statistics}>
       {{ title } && <h2 className={css.title}>{title}</h2>}
 
-      <ul className={css.stat_list}>
+      <ul className={css["stat-list"]}>
         {stats.map(({ id, label, percentage }) => {
           return (
             <li className={css.item} key={id}>
