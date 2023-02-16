@@ -31,6 +31,10 @@ tbody {
   background-color: white;
 }
 
+tbody td:not(:last-child) {
+  border-right: 1px solid rgb(233, 231, 231);
+}
+
 td {
   padding-top: 15px;
   padding-bottom: 15px;
