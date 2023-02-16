@@ -2,7 +2,7 @@ import Profile from 'components/Profile/Profile';
 import user from 'components/Profile/user.json';
 
 import data from 'components/Statistics/data.json';
-import Statistics from './Statistics/Statistics';
+import Statistics from 'components/Statistics/Statistics';
 
 import friends from 'components/FriendList/friends.json';
 import FriendList from 'components/FriendList/FriendList';
@@ -13,27 +13,19 @@ import TransactionHistory from 'components/TransactionHistory/TransactionHistory
 export const App = () => {
   return (
     <div>
-      <div>
-        <Profile
-          username={user.username}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-          stats={user.stats}
-        />
-      </div>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
 
-      <div>
-        <Statistics title="Upload stats" stats={data} />
-      </div>
+      <Statistics title="Upload stats" stats={data} />
 
-      <div>
-        <FriendList friends={friends} />
-      </div>
+      <FriendList friends={friends} />
 
-      <div>
-        <TransactionHistory items={transactions} />
-      </div>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

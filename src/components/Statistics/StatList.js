@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 export default function StatList({ stats }) {
   return (
     <ul className="stat-list">
-      {stats.map(stat => {
+      {stats.map(({ id, label, percentage }) => {
         return (
-          <li className="item" key={stat.id}>
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}</span>
+          <li className="item" key={id}>
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}</span>
           </li>
         );
       })}
