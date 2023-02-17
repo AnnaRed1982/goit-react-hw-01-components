@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import css from 'components/FriendList/FriendList.module.css';
-// import FriendListItem from './FriendListItem';
 
 export default function FriendList({ friends }) {
   return (
@@ -19,8 +18,6 @@ export default function FriendList({ friends }) {
           </li>
         );
       })}
-
-      {/* <FriendListItem friends={friends} /> */}
     </ul>
   );
 }
@@ -33,5 +30,5 @@ FriendList.propTypes = {
       name: PropTypes.string,
       isOnline: PropTypes.bool,
     })
-  ),
+  ).isRequired,
 };
